@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/grag_by"
+              android:clickable="true"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/viewRoom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/room"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tvFilterRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/all"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/div_color"/>
+
+    <LinearLayout
+        android:id="@+id/viewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/style"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tvFilterStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/all"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/div_color"/>
+
+    <LinearLayout
+        android:id="@+id/viewColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/color"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tvFilterColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/all"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/div_color"/>
+
+    <LinearLayout
+        android:id="@+id/viewBrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/brand"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tvFilterBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/all"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/div_color"/>
+
+    <LinearLayout
+        android:id="@+id/viewPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/price"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tvFilterPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/all"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            />
+    </LinearLayout>
+</LinearLayout>

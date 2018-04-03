@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_size_5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fl_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/line_all"
+        android:paddingLeft="3dp">
+
+        <TextView
+            android:id="@+id/tv_calendar_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t_929292"
+            android:textSize="@dimen/text_size_6" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:paddingBottom="@dimen/dp_1">
+
+        <ImageView
+            android:id="@+id/gift_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_gift_gray" />
+
+        <com.jajahome.widget.GiftImageView
+            android:id="@+id/gift_red_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_gift_red"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

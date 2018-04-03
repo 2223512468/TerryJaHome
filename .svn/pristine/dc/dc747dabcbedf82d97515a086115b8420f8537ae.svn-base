@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/theme_bg"
+              android:orientation="vertical">
+
+    <View
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <RelativeLayout
+        android:id="@+id/view_goto_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg"
+        android:clickable="true"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tv_total_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/item_margin"
+            android:paddingStart="@dimen/item_margin"
+            android:text="@string/comment"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_jt"
+            android:paddingEnd="@dimen/item_margin"
+            android:paddingRight="@dimen/item_margin"
+            android:src="@mipmap/ic_comment_edit"/>
+
+        <ImageView
+            android:id="@+id/img_jt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/item_margin"
+            android:paddingRight="@dimen/item_margin"
+            android:src="@mipmap/ic_right_back"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_empty"
+            android:background="@android:color/white"
+            android:textColor="@color/text_gray"
+            android:text="暂无评论"
+            android:paddingLeft="@dimen/item_margin"
+            android:paddingStart="@dimen/item_margin"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </FrameLayout>
+
+</LinearLayout>

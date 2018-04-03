@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_room_filter">t
+        <item>客厅</item>
+        <item>卧室</item>
+        <item>餐厅</item>
+        <item>儿童房</item>
+        <item>书房</item>
+        <item>厨房</item>
+        <item>卫生间</item>
+    </string-array>
+    <string-array name="designer_commit">
+        <item>点击上传身份证正面照片(必填)</item>
+        <item>点击上传身份证反面照片(必填)</item>
+        <item>点击上传本人名片(选填)</item>
+    </string-array>
+    <string-array name="my_order_status">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待精算</item>
+    </string-array>
+
+    <string-array name="cou_states">
+        <item>我的优惠券</item>
+        <item>领取优惠券</item>
+    </string-array>
+
+</resources>

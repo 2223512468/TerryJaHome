@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/common_view_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.8dp"
+    android:background="@drawable/select_btn_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_holder_big" />
+
+</LinearLayout>

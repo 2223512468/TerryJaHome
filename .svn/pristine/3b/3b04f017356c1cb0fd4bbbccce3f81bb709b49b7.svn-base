@@ -1,0 +1,618 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+        
+    <string name="app_name">jajahome</string>
+        
+    <string name="loading_more">getting more</string>
+        
+    <string name="finish">complete</string>
+        
+    <string name="loading">loading</string>
+        
+    <string name="data_error">the network is poorly</string>
+        
+    <string name="press_again_to_exit">press again to exit the application</string>
+        
+    <string name="my_jajahome">my jajahome</string>
+        
+    <string name="collext">my favorites</string>
+        
+    <string name="project_picture">design and favorite picture</string>
+        
+    <string name="project">my plan</string>
+        
+    <string name="project_diy">design and my diy</string>
+        
+    <string name="setting">settings</string>
+        
+    <string name="account_address">account and address</string>
+        
+    <string name="shareapp">share app</string>
+        
+    <string name="share_jajahome">share jajahome</string>
+        
+    <string name="inviteno">my invitation code</string>
+        
+    <string name="share_invite_no">share invitation code</string>
+        
+    <string name="url_empty">wrong address link</string>
+        
+    <string name="room">space</string>
+        
+    <string name="all">all</string>
+        
+    <string name="style">style</string>
+        
+    <string name="color">color</string>
+        
+    <string name="brand">brand</string>
+        
+    <string name="price">price</string>
+    <string name="input_user">please enter your phone number</string>
+        
+    <string name="input_pwd">please enter your password</string>
+        
+    <string name="login">login</string>
+        
+    <string name="register">register</string>
+        
+    <string name="forget_pwd">forget the password</string>
+        
+    <string name="user_login">account login</string>
+        
+    <string name="user_register">user registration</string>
+        
+    <string name="input_phone">please enter the phone number</string>
+        
+    <string name="input_yanzhengma">please enter the verification code</string>
+        
+    <string name="input_pwd_again">please re-enter the password</string>
+        
+    <string name="input_invite">please enter the invitation code</string>
+        
+    <string name="treaty">license authentication protocol</string>
+        
+    <string name="yanzhengma">get code</string>
+        
+    <string name="find_pwd">retrieve password</string>
+        
+    <string name="send">commit</string>
+        
+    <string name="commit_apply">submit the request</string>
+        
+    <string name="empty_phone">the phone number can not be empty</string>
+        
+    <string name="back">returns</string>
+        
+    <string name="pls_ask_price">request quote</string>
+        
+    <string name="category">category</string>
+        
+    <string name="toast_login_username_empty">please enter your mobile number</string>
+        
+    <string name="toast_login_sms_empty">please enter your verification code</string>
+        
+    <string name="toast_login_pwd_empty">please enter your password</string>
+        
+    <string name="toast_login_pwdagain_empty">please re-enter your password</string>
+        
+    <string name="toast_login_pwd_no">two passwords are incorrect, please re-enter</string>
+        
+    <string name="toast_login_invite_no_empty">please enter your invitation code</string>
+        
+    <string name="toast_password__limit_length">password length of not less than six</string>
+        
+    <string name="toast_login_phone_error">please check that the phone number you entered is
+        correct
+    </string>
+        
+    <string name="networkproblem">network exception</string>
+        
+    <string name="set">set</string>
+        
+    <string name="item">item</string>
+        
+    <string name="show">show</string>
+        
+    <string name="designer_user">design +</string>
+        
+    <string name="diy_method">diy program</string>
+        
+    <string name="diy">diy</string>
+        
+    <string name="ziliao">profile</string>
+        
+    <string name="safe_user">account with security</string>
+        
+    <string name="inform">receive notification</string>
+        
+    <string name="news">to push or close the message push , please find \ "message \" in
+        the phone's "settings \" - \ "notification \" to set
+    </string>
+        
+    <string name="cache">clear cache</string>
+        
+    <string name="serve">service and feedback</string>
+        
+    <string name="aboutus">about us</string>
+        
+    <string name="exit">exit the current account</string>
+        
+    <string name="data_change">data modification</string>
+        
+    <string name="account_safe">account with security</string>
+        
+    <string name="reset">reset</string>
+        
+    <string name="copyright_news">copyright information</string>
+        
+    <string name="contact_us">contact us</string>
+        
+    <string name="check_upgrade">detect new version</string>
+        
+    <string name="contact_seller">contact seller</string>
+        
+    <string name="change_pwd">change password</string>
+        
+    <string name="toast_pwd_old_empty">the original password can not be empty</string>
+        
+    <string name="toast_pwd_new_empty">new password can not be empty</string>
+        
+    <string name="toast__pwd_again_empty">confirm password can not be empty</string>
+    <string name="friend">invite friends</string>
+        
+    <string name="friend_list">my invited friend</string>
+        
+    <string name="address_change">edit the address</string>
+        
+    <string name="choose_area">please select your area</string>
+        
+    <string name="edit_detail_adress">please enter the full address</string>
+        
+    <string name="postcode">zip code</string>
+        
+    <string name="edit_name">consignee name</string>
+        
+    <string name="edit_phone">contact the phone</string>
+        
+    <string name="edit_tel">phone</string>
+        
+    <string name="my_address">my shipping address</string>
+        
+    <string name="address">shipping address</string>
+        
+    <string name="goods_detail">package</string>
+        
+    <string name="goods_item">single product</string>
+        
+    <string name="goods_diy">diy</string>
+        
+    <string name="material">material</string>
+        
+    <string name="related">related item</string>
+        
+    <string name="detail">detailed parameter</string>
+        
+    <string name="code">number</string>
+        
+    <string name="place">origin</string>
+        
+    <string name="guige">spec</string>
+        
+    <string name="collect_success">collection success</string>
+        
+    <string name="del_collect_success">cancel collection success</string>
+        
+    <string name="comment">cumulative comments</string>
+    <string name="user_comment">comments</string>
+        
+    <string name="pls_input_user_comment">please enter comment</string>
+    <string name="pls_input_reply">please enter reply</string>
+    <string name="is_commentting">commenting</string>
+    <string name="is_replying">replying</string>
+    <string name="apply_designer">Click Application to become a VIP member</string>
+        
+    <string name="applied_designer">applied_designer</string>
+
+        
+    <string name="decoration_company">decoration company</string>
+        
+    <string name="designer">VIP members</string>
+        
+    <string name="city_partner">city operator</string>
+        
+    <string name="xiehui">association</string>
+        
+    <string name="news_center">message center</string>
+        
+    <string name="fabric">fabric</string>
+        
+    <string name="weichat">micro letter</string>
+        
+    <string name="weichat_zone">friends circle</string>
+        
+    <string name="qq">qq</string>
+        
+    <string name="cancel">cancel</string>
+        
+    <string name="my_designer">my application</string>
+        
+    <string name="designer_news">please ensure that the authenticity of your information, real-name
+        authentication through, your head will be followed by "v \" words
+    </string>
+        
+    <string name="input_name">please enter your real name (required)</string>
+        
+    <string name="input_identify">please enter the correct id number (required)</string>
+
+        
+    <string name="input_address">please select your region provinces and cities (required)</string>
+        
+    <string name="input_company">please enter your company name or studio name (required)</string>
+        
+    <string name="tv_designer_commit">click to upload id card positive photos (required)</string>
+        
+    <string name="tv_designer_commit_no">click to upload id card negative photo (required)</string>
+        
+    <string name="tv_designer_commit_my">click to upload my business card (optional)</string>
+        
+    <string name="tv_designer_agreementy">VIP membership Agreement (required)</string>
+        
+    <string name="skip">skip</string>
+        
+    <string name="pls_agress_desiner">Please agree to the VIP membership agreement</string>
+        
+    <string name="agree_xiyi">please agree to the license agreement</string>
+        
+    <string name="usernewsoutof">user information is invalid, please re-login</string>
+        
+    <string name="toast_login_telephone_error">please check if the entered phone number is
+        incorrect
+    </string>
+        
+    <string name="toast_postcode_error">please check whether the zip code input is correct</string>
+        
+    <string name="toast_login_area_empty">please select your area</string>
+        
+    <string name="toast_address_empty">please enter the full address</string>
+        
+    <string name="toast_postcode_empty">please enter the zip code</string>
+        
+    <string name="toast_name_empty">please enter the consignee name</string>
+        
+    <string name="toast_phone_empty">please enter a contact phone</string>
+        
+    <string name="toast_telephong_empty">please enter the contact number</string>
+        
+    <string name="save_success">save successfully</string>
+        
+    <string name="publisher">publisher</string>
+        
+    <string name="type">type</string>
+        
+    <string name="time">time</string>
+        
+    <string name="show_detail">details</string>
+        
+    <string name="confirm">ok</string>
+        
+    <string name="save">save</string>
+        
+    <string name="phone_is_illegal">phone number is not formatted</string>
+        
+    <string name="city">city</string>
+        
+    <string name="house">find my home</string>
+    <string name="weibo">sina weibo</string>
+        
+    <string name="buy_now">buy now</string>
+        
+    <string name="add_to_shopping_cart">add to cart</string>
+        
+    <string name="shopping_cart">shopping cart</string>
+        
+    <string name="pay_order">payment order</string>
+        
+    <string name="pay">payment</string>
+        
+    <string name="sale_h">service</string>
+        
+    <string name="cancel_order">cancel order</string>
+        
+    <string name="exit_money">request a refund</string>
+        
+    <string name="distribution_way">delivery method</string>
+        
+    <string name="pay_way">payment method</string>
+        
+    <string name="pay_count">Please select payment times</string>
+    <string name="pay_num">payment times</string>
+    <string name="order_num">order number:%1$s</string>
+        
+    <string name="order">order</string>
+        
+    <string name="select_way_pay">please select the payment method</string>
+        
+    <string name="my_order">my order</string>
+        
+    <string name="pay_price">total: ¥%1$s</string>
+        
+    <string name="order_total_num">%1$ d pieces</string>
+        
+    <string name="re_login">the current account has been logged in other devices, whether to
+        re-login?
+    </string>
+        
+    <string name="confirm_order">confirm receipt</string>
+        
+    <string name="cancel_order_success">cancel order success</string>
+        
+    <string name="related_set">related package</string>
+        
+    <string name="sell_list">sales list</string>
+        
+    <string name="connect_shopping">contact merchant</string>
+        
+    <string name="item_kan">see more</string>
+        
+    <string name="set_country">where</string>
+        
+    <string name="set_detail">full address</string>
+        
+    <string name="set_post">zip code</string>
+        
+    <string name="set_name">consignee name</string>
+        
+    <string name="set_phone">contact phone</string>
+        
+    <string name="set_call">phone number</string>
+        
+    <string name="designer_bisai">contest</string>
+        
+    <string name="designer_yuanch">original</string>
+        
+    <string name="designer_beautipic">mito</string>
+        
+    <string name="designer_beautiwen">article</string>
+        
+    <string name="order_whole_pay">full one-time payment</string>
+        
+    <string name="order_second_pay">prepaid deposit 50%, balance 15 days before delivery pay
+    </string>
+        
+    <string name="current_pay">this payment</string>
+        
+    <string name="yun_order">waybill number</string>
+        
+    <string name="search_mater">view logistics</string>
+        
+    <string name="cancel_pop">there is a problem with the product, no</string>
+    is required
+        
+    <string name="cancel_pop_buy">too expensive</string>
+        
+    <string name="cancel_exit">unconditional refund</string>
+        
+    <string name="cancel_find">find a better</string>
+        
+    <string name="cancel_again">no, click wrong</string>
+
+        
+    <string name="set_please_name">please enter the consignee name</string>
+        
+    <string name="set_please_post">please enter the zip code</string>
+        
+    <string name="set_please_phone">please enter a contact phone</string>
+        
+    <string name="set_please_detail">please enter the full address</string>
+        
+    <string name="set_please_call">please enter the contact number</string>
+        
+    <string name="apply_introduce">please feel free to upload, we will do the watermark on the
+        uploaded photos, only jajahome platform authentication use.
+    </string>
+
+    <!--客服 -->
+    <string name="chat_up_finger">finger slides and</string>
+
+        
+    <string name="chat_press_talk">press and hold</string>
+        
+    <string name="chat_release_send">release the end</string>
+        
+    <string name="chat_image">picture</string>
+        
+    <string name="chat_file">file</string>
+        
+    <string name="chat_photo">shoot</string>
+        
+    <string name="chat_video">small video</string>
+        
+    <string name="chat_audio_too_short">recording too short, please try again</string>
+        
+    <string name="chat_video_too_short">recording too short, please try again</string>
+        
+    <string name="chat_resend">resend</string>
+        
+    <string name="chat_del">delete</string>
+        
+    <string name="chat_save">save</string>
+        
+    <string name="chat_file_too_large">file is too large to send failed</string>
+        
+    <string name="chat_file_not_exist">file does not exist, send failed</string>
+        
+    <string name="chat_image_preview_title">image preview</string>
+        
+    <string name="chat_image_preview_send">send</string>
+        
+    <string name="chat_image_preview_load_err">image loading failed</string>
+        
+    <string name="chat_image_preview_ori">originals send</string>
+    <!-- time -->
+    <string name="time_yesterday">yestoday</string>
+    <string name="time_day">d</string>
+    <string name="time_month">m</string>
+    <string name="time_year">y</string>
+    <string name="time_more">99+</string>
+    <string name="title_activity_group_chat_setting">groupchatsettingactivity</string>
+    <string name="summary_image">[image]</string>
+        
+    <string name="summary_voice">[voice]</string>
+        
+    <string name="summary_video">[small video]</string>
+        
+    <string name="summary_file">[file]</string>
+        
+    <string name="summary_friend_add">request to add friends</string>
+        
+    <string name="summary_friend_added">i have added</string>
+        
+    <string name="summary_friend_add_me">request to add</string>
+        
+    <string name="summary_friend_recommend">recommend adding</string>
+        
+    <string name="summary_me">me</string>
+        
+    <string name="summary_group_apply">request plus group</string>
+        
+    <string name="summary_group_invite">invite</string>
+        
+    <string name="summary_group_add">join group</string>
+        
+    <string name="summary_agree">agree</string>
+        
+    <string name="summary_disagree">reject</string>
+        
+    <string name="summary_invite_person">invitee</string>
+        
+    <string name="summary_handle_person">handler</string>
+        
+    <string name="summary_group_admin_change">administrator changes</string>
+        
+    <string name="summary_group_info_change">group data change</string>
+        
+    <string name="summary_group_mem_change">group member change</string>
+        
+    <string name="summary_group_mem_add">join group</string>
+        
+    <string name="summary_group_mem_quit">exit group</string>
+
+    <string name="summary_group_mem_kick">was kicked out group</string>
+        
+    <string name="summary_group_mem_modify">data changes</string>
+        
+    <string name="save_fail">save failed</string>
+        
+    <string name="save_exist">file already exists</string>
+        
+    <string name="save_succ">save successfully</string>
+        
+    <string name="file_not_found">​​file not found, please try again</string>
+        
+    <string name="download_fail">download failed</string>
+        
+    <string name="downloading">is downloading, please wait</string>
+        
+    <string name="chat_typing">the other party is typing ...</string>
+        
+    <string name="chat_content_bad">content contains sensitive words</string>
+        
+    <string name="conversation_draft">[draft]</string>
+        
+    <string name="conversation_system_friend">new friend</string>
+        
+    <string name="conversation_del">delete session</string>
+        
+    <string name="home_conversation_tab">session</string>
+
+    <string name="no_buy">I do not want to buy it </string>
+    <string name="buy_err">Fill in error </string>
+    <string name="other_reason">Other causes</string>
+
+    <string name="phone_num">cell-phone number:</string>
+    <string name="set_password">Set password</string>
+    <string name="nian_zheng_ma">identifying code </string>
+    <string name="send_phone">send</string>
+    <string name="band">bundling</string>
+    <string name="band_phone">Bind phone number</string>
+    <string name="jiebang">Binding mobile phone </string>
+    <string name="bang">Bind phone</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">The two-dimensional code into the box, you can automatically scan</string>
+    <string name="my_user_log"> my tracks</string>
+    <string name="about_user_log">The history of the visit</string>
+    <string name="invite_no_introduce">If there is no invitation code, please refer to the person or customer service, n hotline 400-690-3766. </string>
+    <string name="third_invite_no">If there is no invitation code,\n please refer to the person or customer \nservice, n hotline 400-690-3766.</string>
+    <string name="register_invite_no">If there is no invitation code,\n please refer to the person or customer \nservice, n hotline 400-690-3766.</string>
+    <string name="rebate">The total amount (yuan) </string>
+    <string name="leiget_money">Total cash </string>
+    <string name="get_xian_money">Bound to cash</string>
+    <string name="get_money_rule">Cash rules</string>
+    <string name="get_all">whole</string>
+    <string name="get_text">income</string>
+    <string name="get_money">enchashment</string>
+    <string name="get_edit">edit</string>
+    <string name="buy_return">Purchase rebate </string>
+    <string name="user_rule">service regulations</string>
+    <string name="jaja_rule">jajahome gold coins</string>
+    <string name="rule_exchange">Gold Exchange </string>
+    <string name="leiji_exchange">The cumulative exchange</string>
+    <string name="my_wallet">Wallet</string>
+    <string name="my_rebate">Gold payment</string>
+    <string name="myasset">My assets</string>
+    <string name="myrebate">My gold coin</string>
+
+    <string name="facilitator">facilitator</string>
+    <string name="internastaff">Internal staff</string>
+    <string name="super_designer">Super Designer</string>
+
+    <string name="my_integrate">querygold redeemmonthcard</string>
+    <string name="shenqin_super_designer">Apply for a super Designer</string>
+    <string name="tobesuperdesigner">As a super designer, the annual fee is 2000 yuan</string>
+    <string name="designer_name">Annual Membership Fee</string>
+    <string name="xufei">renewals</string>
+    <string name="onclick_super_designer">Click to become a super Designer</string>
+    <string name="user_qian_dao">Daily</string>
+    <string name="sign_title">Daily check-in gold coins, double the cumulative attendance</string>
+    <string name="sign_exchange">Sign in for gold</string>
+    <string name="week1">Monday</string>
+    <string name="week2">Tuesday</string>
+    <string name="week3">Wednesday</string>
+    <string name="week4">Thursday</string>
+    <string name="week5">Friday</string>
+    <string name="week6">Saturday</string>
+    <string name="week7">Sunday</string>
+    <string name="choose_cash">Select the cash flow method </string>
+    <string name="add_cash_tip">Please click on the Add button input cash account</string>
+    <string name="add_tip">add</string>
+    <string name="change_tip">renewal</string>
+    <string name="input_reward_cash">Please enter the withdrawal amount</string>
+    <string name="max_reward_cash">Maximum withdrawal amount </string>
+    <string name="right_cash">Immediate withdrawal</string>
+    <string name="please_input_alipay_num">Please enter a Alipay account</string>
+    <string name="alr_sure">Has confirmed the correct account </string>
+    <string name="cash_enough">Pro, cash withdrawals must not be less than 1 yuan! </string>
+    <string name="is_int">Please enter an integer.</string>
+    <string name="input_num">Please enter a numeric value </string>
+    <string name="order_pay">More than ten thousand of the amount, the proposed use of online banking or offline bank transfer, and upload transfer vouchers </string>
+    <string name="order_xian">Please see the following accounts play money, and then fill in the name and people play money account, and upload photos of vouchers. </string>
+    <string name="pop_text_collecting_account">collecting account</string>
+    <string name="pop_text_account_name">Name: Hangzhou clip Home Furnishing Co. Division</string>
+    <string name="pop_text_account">Account number : 2010 0013 8581 001</string>
+    <string name="pop_bank_of_deposit">Bank of deposit: Hangzhou United Rural Commercial Bank, Limited by Share Ltd
+</string>
+    <string name="pop_pay_account">Payment account</string>
+    <string name="pop_seller_company">Hangzhou House Science and Technology Information Co. Ltd.</string>
+    <string name="pop_account_name">name in an account book</string>
+    <string name="pop_account">accounts</string>
+    <string name="pop_seller_account">2010 0013 8581 001</string>
+    <string name="pop_seller_pic">Upload transfer voucher </string>
+    <string name="my_value">Cupones.</string>
+    <string name="buy_shop">Coupon collection</string>
+    <string name="in_exchange">exchange</string>
+    <string name="exchange_desc">Coupon exchange code by the organizers of the unified release, n details of the Advisory 400-690-3766
+    </string>
+    <string name="input_exchange">Please enter the coupon exchange code</string>
+    <string name="find_item">Looking for a single product</string>
+    <string name="find_set">Looking for suits</string>
+</resources>

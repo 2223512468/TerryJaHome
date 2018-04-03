@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/about_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@drawable/bg_white_radio">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:text="@string/order_xian"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_5" />
+
+        <TextView
+            android:id="@+id/collect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:text="@string/pop_text_collecting_account"
+            android:textSize="@dimen/text_size_5" />
+
+        <View
+            android:id="@+id/line_v"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/collect_text"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/theme_bg" />
+
+        <LinearLayout
+            android:id="@+id/sell_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_v"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pop_text_account_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/pop_text_account"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/pop_bank_of_deposit"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_5" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_v2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_below="@id/sell_info_ll"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/theme_bg" />
+
+        <TextView
+            android:id="@+id/pop_pay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_v2"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/pop_pay_account"
+            android:textSize="@dimen/text_size_5" />
+
+        <View
+            android:id="@+id/line_v3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_below="@id/pop_pay_text"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/theme_bg" />
+
+        <LinearLayout
+            android:id="@+id/pay_account_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_v3"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_account_name"
+                    android:textSize="@dimen/text_size_5" />
+
+                <EditText
+                    android:id="@+id/account_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_margin"
+                    android:layout_marginRight="@dimen/preview_view_height"
+                    android:background="@drawable/edit_safa"
+                    android:hint="@string/pop_seller_company"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/text_size_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_account"
+                    android:textSize="@dimen/text_size_5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/account_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/item_margin"
+                        android:layout_marginRight="@dimen/preview_view_height"
+                        android:background="@drawable/edit_safa"
+                        android:hint="@string/pop_seller_account"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/text_size_5" />
+
+
+                    <com.jajahome.widget.SellerImg
+                        android:id="@+id/seller_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_140"
+                        android:layout_marginLeft="@dimen/item_margin"
+                        android:layout_marginRight="@dimen/preview_view_height"
+                        android:layout_marginTop="@dimen/item_margin" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_btn"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:background="@drawable/btn_login"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

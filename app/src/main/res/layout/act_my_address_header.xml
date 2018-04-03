@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/btn_login"
+        android:text="添加新的收货地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+</RelativeLayout>

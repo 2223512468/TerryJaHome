@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:id="@+id/root_rel"
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg"
+                android:orientation="vertical">
+
+    <include layout="@layout/news_title"/>
+    <View
+        android:id="@+id/view_div_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/view_top"
+        android:background="@color/div_color"/>
+    <com.jajahome.widget.recyclerview.MultiRecycleView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_div"
+        android:layout_below="@+id/view_div_top"
+        app:div_height="@dimen/div_height"/>
+
+    <View
+        android:id="@+id/view_div"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_above="@+id/bottom_view"
+        android:background="@color/div_color"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_edit"/>
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/pls_input_user_comment"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray_filter"
+            android:textSize="@dimen/text_size_14"/>
+        <View
+            android:layout_width="@dimen/div_height"
+            android:background="@color/theme_bg"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/img_send"
+            android:layout_width="60dp"
+            android:text="@string/send"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_send"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

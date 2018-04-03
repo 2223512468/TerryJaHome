@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/ic_left_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/goods_diy"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/scale_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@mipmap/set_big"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/set_mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/scale_onclick"
+            android:background="@mipmap/set_mod"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="@string/save"
+            android:textColor="@color/text_color_black_pressable"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <com.jajahome.diyview.ImageDiyFrameLayout
+            android:id="@+id/img_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/gone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_frame_layout"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/bg_detail_tv"
+            android:padding="@dimen/dp_2"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_bottom_line"
+        android:layout_below="@+id/set_rl"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:id="@+id/view_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:layout_above="@+id/bottom_view"
+        android:background="@color/div_color" />
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_icon_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bottom_img_msg"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/select_btn_white"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_bottom_loc" />
+
+        <ImageView
+            android:id="@+id/bottom_img_collect"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/select_btn_white"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_bottom_collect"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bottom_img_share"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_btn_white"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_save_diy" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/view_related"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingEnd="@dimen/item_margin"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingStart="@dimen/item_margin"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/related_set"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_related"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+    <com.jajahome.widget.HorizontalRecycleView
+        android:background="@android:color/white"
+        android:id="@+id/related_img_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

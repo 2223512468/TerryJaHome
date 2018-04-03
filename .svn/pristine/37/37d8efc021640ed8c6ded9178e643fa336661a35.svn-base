@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="@android:color/white">
+
+    <com.jajahome.feature.PinchImageViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/item_margin"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view"
+        android:src="@mipmap/ic_left_back"
+        android:layout_gravity="left|top" />-->
+</FrameLayout>

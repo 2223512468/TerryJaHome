@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_youhui_transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_margin">
+
+        <TextView
+            android:id="@+id/dimiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_margin"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_20" />
+
+
+        <RelativeLayout
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:layout_below="@id/dismiss"
+            android:layout_marginTop="@dimen/dp_30">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_title_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/text_size_10"
+                android:background="@drawable/btn_login"
+                android:text="兑换"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_55"
+                android:layout_margin="@dimen/item_margin"
+                android:layout_toLeftOf="@id/btn"
+                android:background="@drawable/edit_youhui_safa"
+                android:hint="@string/input_exchange"
+                android:paddingLeft="@dimen/text_size_10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size_10" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_text"
+            android:layout_margin="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/exchange_desc"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

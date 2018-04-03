@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_title_height"
+    android:background="@color/gird_color"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ibtn_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@mipmap/ic_left_back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/my_jajahome"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageButton
+        android:id="@+id/ibtn_news"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@mipmap/ic_messge"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/scale_onclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@mipmap/set_big"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/set_mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/scale_onclick"
+        android:background="@mipmap/set_mod"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/set_vr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/set_mod"
+        android:background="@mipmap/set_vr"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

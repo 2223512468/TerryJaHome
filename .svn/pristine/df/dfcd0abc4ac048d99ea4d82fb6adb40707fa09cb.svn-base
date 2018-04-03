@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 背景为白色 无边框和圆角 按下时效果 -->
+
+    <solid android:color="@color/theme_bg" />
+
+
+</shape>

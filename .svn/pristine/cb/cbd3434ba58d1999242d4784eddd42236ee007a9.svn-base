@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_room_filter">t
+        <item>living room</item>
+                
+        <item>bedroom</item>
+                
+        <item>restaurant</item>
+                
+        <item>children room</item>
+                
+        <item>study</item>
+                
+        <item>kitchen</item>
+                
+        <item>bathroom</item>
+    </string-array>
+    <string-array name="designer_commit">
+                
+        <item>Click to upload ID card positive photo (required)</item>
+                
+        <item>Click to upload ID card negative photo (required)</item>
+                
+        <item>Click to upload my business card (optional)</item>
+            
+    </string-array>
+        
+    <string-array name="my_order_status">
+                
+        <item>all</item>
+                
+        <item>pending payment</item>
+                
+        <item>to be shipped</item>
+                
+        <item>to be received</item>
+                
+        <item>to be actuarial</item>
+            
+    </string-array>
+
+    <string-array name="cou_states">
+        <item>Mis Cupones.</item>
+        <item>Receive Cupones</item>
+    </string-array>
+
+</resources>

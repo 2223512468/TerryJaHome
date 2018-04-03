@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_translate">
+
+    <LinearLayout
+        android:id="@+id/cash_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/bg_white_radio"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/item_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_margin"
+                android:text="@string/please_input_alipay_num"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_13" />
+
+            <EditText
+                android:id="@+id/acc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_margin"
+                android:textSize="@dimen/dp_13" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rignov_cash"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/alr_sure"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/cash_dia"
+        android:layout_alignTop="@id/cash_dia"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="-15dp">
+
+        <com.jajahome.widget.CircleBackGround
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/dismiss"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_shut_down" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

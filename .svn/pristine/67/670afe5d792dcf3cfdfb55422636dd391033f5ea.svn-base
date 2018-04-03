@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/title_top" />
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:layout_below="@+id/top"
+        android:background="@color/div_color" />
+
+    <com.jajahome.widget.recyclerview.MultiRecycleView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_line"
+        android:layout_below="@+id/top_line"
+        app:div_color="@color/div_color"
+        app:div_height="@dimen/div_height" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:layout_above="@+id/bottom_view"
+        android:background="@color/div_color" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_add_to_shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_circle_orign"
+            android:text="@string/add_to_shopping_cart"
+            android:textColor="@color/orange_ll" />
+
+        <Button
+            android:id="@+id/btn_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toLeftOf="@id/btn_add_to_shopping_cart"
+            android:background="@drawable/btn_login"
+            android:text="@string/buy_now"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

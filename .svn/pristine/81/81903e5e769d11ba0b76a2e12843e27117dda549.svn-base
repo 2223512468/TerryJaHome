@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grag_by"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/viewUser"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/designer_bisai"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/bi_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/div_color" />
+
+    <RelativeLayout
+        android:id="@+id/viewType"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/designer_yuanch"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/yuan_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/div_color" />
+
+    <RelativeLayout
+        android:id="@+id/viewTime"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/designer_beautipic"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/pic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/div_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/div_color" />
+
+    <RelativeLayout
+        android:id="@+id/viewWen"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/designer_beautiwen"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/wen_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

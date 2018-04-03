@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/about_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:background="@color/div_color" />
+
+    <com.jajahome.widget.commontablayout.CommonTabLayout
+        android:id="@+id/common_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_icon_height"
+        app:tl_divider_color="@color/div_color"
+        app:tl_divider_width="@dimen/div_height"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/orange_ll"
+        app:tl_textSelectColor="@color/orange_ll"
+        app:tl_textUnselectColor="@color/text_black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:background="@color/div_color" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

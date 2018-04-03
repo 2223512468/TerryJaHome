@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#d4d4d4</color>
+    <color name="colorAccent">#fa4242</color>
+    <color name="colorPrimaryQuarter">#3303A9F4</color>
+    <color name="colorAccentQuarter">#3300E5FF</color>
+    <color name="text_gray_dark">#666</color>
+    <color name="text_gray_dark1">#000000</color>
+    <color name="text_gray_light">#bcbcbc</color>
+    <color name="text_gray">#969696</color>
+    <color name="text_black_light">#9c9c9c</color>
+    <color name="text_black">#323232</color>
+    <!-- 默认分割线颜色-->
+    <color name="div_color">#DADADA</color>
+    <!-- 默认背景色-->
+    <color name="theme_bg">#F5F5F9</color>
+    <color name="half_translate">#e0666666</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="by_gray">#DADADA</color>
+    <color name="red">#F02800</color>
+    <color name="green_text">#6AC20B</color>
+    <color name="gray_text">#999999</color>
+    <color name="blue_low">#778DA2</color>
+    <color name="orange_user">#F02800</color>
+    <color name="orange_ll">#F02800</color>
+    <color name="grag_by">#F7F7F7</color>
+    <color name="btn_order_color">#CCCCCC</color>
+    <color name="red_text">#F02800</color>
+    <color name="gird_color">#F7F7F7</color>
+    <color name="text_set_gray">#E5E5E5</color>
+    <color name="text_gray_filter">#B2B2B2</color>
+    <color name="house_list_item">#525252</color>
+    <color name="btn_background">#AE2702</color>
+    <color name="buy">#4EB542</color>
+    <color name="background_color">#E95814</color>
+    <color name="regist_gold">#ffd0c0</color>
+    <color name="rebate_qiandao">#AEDEFF</color>
+    <color name="user_act">#CB522C</color>
+    <color name="bg_dark_gray">#4c4c4c</color>
+    <color name="bg_light_gray">#808080</color>
+    <color name="bg_red">#b42800</color>
+    <color name="bg_text_gray">#333333</color>
+    <color name="user_background">#666666</color>
+
+    <color name="none">#00000000</color>
+    <color name="t_040404">#040404</color>
+    <color name="t_ff8400">#ff8400</color>
+    <color name="t_ac5900">#ac5900</color>
+    <color name="t_6aa615">#6aa615</color>
+    <color name="t_656565">#656565</color>
+    <!-- 绿色 -->
+    <color name="t_85c826">#85c826</color>
+    <color name="t_7c7c7c">#7c7c7c</color>
+    <color name="t_f9f9f9">#f9f9f9</color>
+    <color name="l_ededed">#ededed</color>
+    <color name="t_5e5e5e">#5e5e5e</color>
+    <color name="t_929292">#929292</color>
+    <color name="t_ededed">#ededed</color>
+    <color name="t_dddddd">#dddddd</color>
+    <color name="titlebar_backgroud">#2b9ad3</color>
+    <color name="wifi_around_line">#bababa</color>
+    <color name="progressbar_color">#949494</color>
+    <color name="progress_color">#85c826</color>
+    <!-- 透明 -->
+    <color name="translation">#a0000000</color>
+    <!-- 米黄 -->
+    <color name="cream_colored">#fefda7</color>
+    <color name="sign_gray">#cccccc</color>
+
+    <color name="cash_back">#e4e4e4</color>
+    <color name="cash_gray">#efefef</color>
+    <color name="free_ship">#c1c1c1</color>
+    <color name="item_back">#f2f2f2</color>
+
+
+</resources>

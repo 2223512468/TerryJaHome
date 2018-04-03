@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/div_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@color/div_color" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div_height"
+        android:layout_above="@+id/tablayout_bottom"
+        android:background="@color/div_color" />
+
+    <com.jajahome.widget.commontablayout.CommonTabLayout
+        android:id="@+id/tablayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_icon_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@android:color/white"
+        tl:tl_iconHeight="@dimen/main_bottom_icon_height"
+        tl:tl_iconVisible="true"
+        tl:tl_iconWidth="@dimen/main_bottom_icon_weight"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="@color/colorPrimary"
+        tl:tl_textUnselectColor="@color/text_black_light" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/div_top" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_person"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/item_margin"
+                android:src="@mipmap/ic_holder_header_small" />
+
+            <ImageView
+                android:id="@+id/img_v"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|bottom"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/fl"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:id="@+id/btn_shopping_cart"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:background="@mipmap/icon_shopping_car">
+
+            <TextView
+                android:id="@+id/tv_shopping_cart_num"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/item_margin"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/circle_filled_red"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/diy_collect"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_shopping_cart"
+            android:background="@mipmap/ic_diy_collected"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/er_wm"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/btn_shopping_cart"
+            android:background="@mipmap/erwm" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/btn_shopping_cart"
+            android:background="@mipmap/ic_main_search"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

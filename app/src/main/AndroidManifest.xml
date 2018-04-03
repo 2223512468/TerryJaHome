@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jajahome">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <application
+        android:name=".application.JaJaHomeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jajahome.feature.LaunchAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.home.MainAty"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".feature.user.activity.MyCollectAct" />
+        <activity android:name=".feature.user.activity.LoginAct" />
+        <activity android:name=".feature.user.activity.RegisterAct" />
+        <activity android:name=".feature.user.activity.ForgetPwdAct" />
+        <activity
+            android:name=".feature.H5Act"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".feature.PagerActivity" />
+        <activity android:name=".feature.GuildAct" />
+        <activity android:name=".feature.user.activity.SettingAct" />
+        <activity android:name=".feature.user.activity.AccountAct" />
+        <activity android:name=".feature.user.activity.DataAct" />
+        <activity android:name=".feature.user.activity.FeedbackAct" />
+        <activity android:name=".feature.user.activity.AboutUsAct" />
+        <activity android:name=".feature.user.activity.ChangePwdAct" />
+        <activity android:name=".feature.item.ItemDetailAct" />
+        <activity android:name=".feature.user.activity.FriendListAct" />
+        <activity android:name=".feature.user.activity.AddressAct" />
+        <activity android:name=".feature.user.activity.MyAddressAct" />
+        <activity android:name=".feature.user.activity.NewsAct" />
+        <activity android:name=".feature.user.activity.DesignerApplyAct" />
+        <activity android:name=".feature.user.activity.RebateInfoAct" />
+        <activity android:name=".feature.user.activity.IntegrateAct" />
+        <activity android:name=".feature.user.activity.UserAct" />
+        <activity android:name=".feature.user.activity.SignAct" />
+        <activity android:name=".feature.user.activity.CashAct" />
+        <activity android:name=".feature.user.activity.CommitAct" />
+        <activity android:name=".feature.user.activity.ValueAct" />
+        <activity android:name=".feature.house.SelectBuildingListAct" />
+
+
+        <activity
+            android:name=".feature.set.SetDetailAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".feature.show.ShowH5DetailAct" />
+        <activity android:name=".feature.show.ShowImgDetailAct" />
+        <activity
+            android:name=".feature.diy.DiyDetailAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".feature.diy.DiySelectItemAct" />
+        <activity android:name=".feature.house.CityListAct" />
+        <activity android:name=".feature.house.HouseSetListAct" />
+        <activity android:name=".feature.house.HouseListAct" />
+        <activity android:name=".feature.user.activity.ShoppingCartAct" />
+        <activity android:name=".feature.user.activity.OrderListAct" />
+        <activity android:name=".feature.user.activity.OrderDetailAct" />
+        <activity android:name=".feature.set.SellItemListAct" />
+        <activity android:name=".feature.user.activity.MaterialsAct" />
+        <activity android:name=".feature.user.activity.YunOrderAct" />
+        <activity android:name=".feature.diy.DiySellItemListAct" />
+        <activity android:name=".feature.user.activity.PhoneAct" />
+        <activity android:name=".feature.user.activity.UserLogAct" />
+        <activity android:name=".feature.AnimAct" />
+        <activity android:name=".feature.WebAct" />
+        <activity android:name=".feature.user.activity.UnPhoneAct" />
+        <activity android:name=".feature.comment.CommentAct" />
+        <activity android:name=".feature.search.SearchShowAct" />
+        <activity android:name=".feature.user.activity.IntChangeAct" />
+        <activity android:name=".feature.user.activity.DefaultAct" />
+        <activity android:name=".feature.house.SelectCityAct" />
+
+
+        <activity
+            android:name=".feature.zxing.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <activity
+            android:name=".feature.set.SetDiyLandscapeAct"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name=".feature.TencentWebV"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".feature.user.activity.HtmlImgAct" />
+
+        <service android:name=".util.LocationSvc" />
+
+
+        <activity
+            android:name=".feature.set.SetLandscapeAct"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105485989" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
+
+        <!-- ****************新浪微博分享集成用到************-->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <!-- ****************支付宝支付 集成用到************-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="585886e31061d20ea2001304"></meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+    </application>
+</manifest>

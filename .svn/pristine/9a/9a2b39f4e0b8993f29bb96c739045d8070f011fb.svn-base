@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <com.jajahome.widget.horizontalrecycle.AutoMoveRecycleView
+        android:id="@+id/top_img_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/view_fabric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingEnd="@dimen/item_margin"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingStart="@dimen/item_margin"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fabric"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_fabric"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginStart="@dimen/item_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14"
+            />
+    </LinearLayout>
+
+    <com.jajahome.widget.HorizontalRecycleView
+        android:id="@+id/fabric_img_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/view_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingEnd="@dimen/item_margin"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingStart="@dimen/item_margin"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/material"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_material"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginStart="@dimen/item_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14"
+            />
+    </LinearLayout>
+
+    <com.jajahome.widget.HorizontalRecycleView
+        android:id="@+id/material_img_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

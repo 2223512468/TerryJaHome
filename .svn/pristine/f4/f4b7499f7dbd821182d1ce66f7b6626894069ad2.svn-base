@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/select_btn_white"
+    android:clickable="true">
+    <!--个人中心adapter 布局-->
+    <RelativeLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_black" />
+
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_back" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="48dp"
+            android:layout_marginRight="@dimen/dp_3"
+            android:layout_toLeftOf="@id/img_filter"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="@dimen/item_margin"
+            android:singleLine="true"
+            android:textColor="@color/text_gray_filter"
+            android:textSize="@dimen/dp_10" />
+
+    </RelativeLayout>
+</LinearLayout>

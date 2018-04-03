@@ -1,0 +1,308 @@
+package com.jajahome.feature.diy.fragment;
+
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
+import android.view.MotionEvent;
+import android.view.View;
+
+import com.google.gson.Gson;
+import com.jajahome.R;
+import com.jajahome.base.BaseFragment;
+import com.jajahome.constant.Constant;
+import com.jajahome.event.EventMessage;
+import com.jajahome.feature.diy.adapter.DiyListAdapter;
+import com.jajahome.feature.set.view.SetImageView;
+import com.jajahome.model.ConfigModel;
+import com.jajahome.model.DiyListModel;
+import com.jajahome.network.ApiImp;
+import com.jajahome.network.HttpCode;
+import com.jajahome.network.HttpUtil;
+import com.jajahome.network.ReqPage;
+import com.jajahome.pop.PopSingleFilter;
+import com.jajahome.util.DensityUtil;
+import com.jajahome.util.FilterSpUtil;
+import com.jajahome.util.StringUtil;
+import com.jajahome.util.cacheutils.CacheUtils;
+import com.jajahome.util.cacheutils.NetUtils;
+import com.jajahome.widget.recyclerview.MultiRecycleView;
+
+import java.util.List;
+import java.util.Map;
+
+import butterknife.BindView;
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
+import rx.Observable;
+import rx.Observer;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Func1;
+import rx.schedulers.Schedulers;
+
+/**
+ * diy 列表
+ */
+public class DiyFrag extends BaseFragment implements
+        MultiRecycleView.OnMutilRecyclerViewListener {
+    public final static int ACTION_DIY_CHANGE = 0X879;//保存的diy方案有变化
+
+    @BindView(R.id.recyclerView)
+    MultiRecycleView recyclerView;
+
+    ConfigModel configModel;
+    private int mColorGray;//灰色字
+    private int mColorOrgin;//橙色字
+    private int offset = 1; //页码
+    private boolean isFirst = true;//是否为第一次请求数据
+    private PopSingleFilter mPopRoom;
+    private PopSingleFilter mPopColor;
+    private PopSingleFilter mPopStyle;
+    private DiyListAdapter mAdapter;
+    private int type = 0;// 请求类型 ** 0 所有模板 ** ** 1 我的列表 **
+    public static String dirName = "diyFrag.txt";
+    private Gson gson = new Gson();
+    private DiyListModel diyListModel;
+
+    @Override
+    protected int getViewId() {
+        return R.layout.frag_diy;
+    }
+
+    @Override
+    protected void init() {
+        initViewController(recyclerView);
+        getConfig();
+        mColorGray = ContextCompat.getColor(mContext, R.color.text_gray);
+        mColorOrgin = ContextCompat.getColor(mContext, R.color.orange_ll);
+        mAdapter = new DiyListAdapter();
+        recyclerView.setAdapter(mAdapter);
+        recyclerView.setOnMutilRecyclerViewListener(this);
+        //  recyclerView.setGridLayout(2);
+        showLoading(true, "");
+        getCacheData();
+        setRecyclerViewListener();
+
+    }
+
+    /**
+     * 选择过赛选器后重新获取列表
+     */
+
+    private void reLoadData() {
+        isFirst = true;
+        showLoading(true, "");
+        offset = 1;
+        getList();
+    }
+
+    @Override
+    public void onRefresh() {
+        offset = 1;
+        getList();
+    }
+
+    @Override
+    public void onLoadMore() {
+        offset = 1 + offset;
+        getList();
+    }
+
+    private void getCacheData() {
+        if (!NetUtils.isNetworkAvailable(getActivity())) {
+            try {
+                String modelJson = CacheUtils.readData(dirName);
+                if (!StringUtil.isEmpty(modelJson)) {
+                    diyListModel = gson.fromJson(modelJson, DiyListModel.class);
+                    setDiyAdapter(diyListModel);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            getList();
+        }
+    }
+
+    private void getList() {
+        ReqPage.ContentBean.PaginationBean paginationBean = new ReqPage.ContentBean.PaginationBean();
+        paginationBean.setOffset(offset);
+        paginationBean.setLimit(Constant.PAGE_LIMIT);
+        ReqPage.ContentBean contentBean = new ReqPage.ContentBean();
+        contentBean.setPagination(paginationBean);
+        contentBean.setType(String.valueOf(type));
+        ReqPage reqPage = new ReqPage();
+        reqPage.setContent(contentBean);
+        reqPage.setCmd(Constant.DIYLIST);
+        final Gson gson = new Gson();
+        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"), gson.toJson(reqPage));
+        mSubscription = ApiImp.get().diyList(requestBody, HttpUtil.getSession(mContext)).subscribeOn(Schedulers.io()).
+                observeOn(AndroidSchedulers.mainThread()).
+                subscribe(new Observer<DiyListModel>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onNext(DiyListModel model) {
+                        recyclerView.stopRefresh();
+                        recyclerView.stopLoadingMore();
+                        String json = gson.toJson(model);
+                        CacheUtils.writeData(json, dirName);
+                        setDiyAdapter(model);
+                    }
+                });
+    }
+
+    private void setDiyAdapter(DiyListModel model) {
+
+        if (model.getStatus() == HttpCode.INVALID_LOGIN_STATE) {
+            showLoginStatusErrorDialog(1);
+            return;
+        } else if ((model.getStatus() != HttpCode.SUCCESS)) {
+            showToast(model.getMessage());
+            return;
+        }
+        if (offset == 1) {
+            if (isFirst) {
+                showLoading(false, "");
+                isFirst = false;
+            }
+            List<DiyListModel.DataBean.SetBean> list = model.getData().getSet();
+            if (list == null || list.size() == 0) {
+                showEmpty(true, "未找到相关信息", null);
+            } else {
+                showEmpty(false, "未找到相关信息", null);
+                mAdapter.resetItems(list);
+            }
+        } else {
+            mAdapter.addItems(model.getData().getSet());
+        }
+    }
+
+    /**
+     * 获取配置信息 ,先取本地存储 本地没有从网络获取
+     */
+    private void getConfig() {
+        Observable<ConfigModel> obsNet = ApiImp.get().
+                config(HttpUtil.getRequestBody(Constant.CONFIG_V2), HttpUtil.getSession(getContext()));
+
+        Observable<ConfigModel> obsShare = Observable.create(new Observable.OnSubscribe<ConfigModel>() {
+            @Override
+            public void call(Subscriber<? super ConfigModel> subscriber) {
+                subscriber.onNext(FilterSpUtil.getInfo(mContext));
+                subscriber.onCompleted();
+            }
+        });
+        Observable<ConfigModel> observer = Observable.concat(obsShare, obsNet).first(new Func1<ConfigModel, Boolean>() {
+            @Override
+            public Boolean call(ConfigModel configModel) {
+                return configModel != null;
+            }
+        });
+        mSubscription = observer.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).
+                subscribe(new Observer<ConfigModel>() {
+                    @Override
+                    public void onCompleted() {
+                        recyclerView.stopRefresh();
+                        recyclerView.stopLoadingMore();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onNext(ConfigModel model) {
+                        configModel = model;
+                        setListener();
+                    }
+                });
+    }
+
+    /**
+     * 设置监听器
+     */
+    private void setListener() {
+
+    }
+
+
+    //自己保存的diy方案变化，重新请求数据
+    @Override
+    public void onEventMainThread(EventMessage event) {
+        super.onEventMainThread(event);
+        if (event.action == ACTION_DIY_CHANGE) {
+            //自己保存的diy方案变化
+            if (type == 1) { //当前显示的为我的模板
+                reLoadData();
+            }
+        }
+    }
+
+    private Map<Integer, SetImageView> setImageViewMap;
+    private int y;
+    private int limit;
+
+    private void setRecyclerViewListener() {
+        setImageViewMap = mAdapter.getSetImageViewMap();
+        int w = (int) DensityUtil.getDisplayWidthDp(mContext);
+        limit = (w * Constant.mHLimit) / Constant.mWLimit;
+
+        recyclerView.getRecyclerView().addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, final int dx, final int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                recyclerView.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        int action = event.getAction();
+                        if (dy > 0) {
+                            y += 2;
+                        } else {
+                            y -= 2;
+                        }
+                        if (setImageViewMap != null) {
+
+                            switch (action) {
+                                case MotionEvent.ACTION_MOVE:
+                                    for (Map.Entry e : setImageViewMap.entrySet()) {
+                                        SetImageView image = (SetImageView) e.getValue();
+                                        if (dy > 0 && y <= limit) {
+                                            image.smoothScrollTo(0, y);
+                                        } else if (dy < 0 && y > -limit) {
+                                            image.smoothScrollTo(0, y);
+                                        } else {
+                                            if (dy > 0) {
+                                                y = limit;
+                                            } else if (dy < 0) {
+                                                y = -limit;
+                                            }
+                                        }
+                                    }
+                                    break;
+                                case MotionEvent.ACTION_UP:
+                                    break;
+                            }
+                        }
+                        return false;
+                    }
+
+                });
+            }
+        });
+    }
+}
+
